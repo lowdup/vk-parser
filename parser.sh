@@ -18,7 +18,7 @@ do
         echo "========= PHOTOS IN USER "$entry" FIND! DOWNLOADING! ========="
         aria2c -j 32 --continue=false --input-file=output/"$entry"/output.txt --dir=output/"$entry" --console-log-level=warn
     else
-        echo "========= "$entry" WITHOUT PHOTOS ========="
+        echo "========= "$entry" WITHOUT PHOTOS = ========="
     fi
     let "count++"
     echo "====================================================================================================================="
